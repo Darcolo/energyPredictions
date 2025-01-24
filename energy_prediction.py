@@ -35,7 +35,7 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_
 scaler = StandardScaler()
 
 scaler.fit(X_train)
-scaler.fit(X_train)
+scaler.fit(X_test)
 x_train_scaled = scaler.transform(X_train)
 x_test_scaled = scaler.transform(X_test)
 
