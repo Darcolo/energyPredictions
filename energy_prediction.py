@@ -43,7 +43,7 @@ print(data.head())
 
 
 X = data[['Lagging_Current_Reactive.Power_kVarh', 'Leading_Current_Reactive_Power_kVarh', 
-          'Lagging_Current_Power_Factor', 'Leading_Current_Power_Factor', 'Hour_of_day','Minute_of_hour']]  # Features
+          'Lagging_Current_Power_Factor', 'Leading_Current_Power_Factor', 'Hour_of_Day','Minute_of_Hour']]  # Features
 y = data['Usage_kWh']  # Target 
 
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
